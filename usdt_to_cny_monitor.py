@@ -7,7 +7,6 @@ import time
 SECRET_KEY = 'xxxx'
 
 def usdtCnyMonitor():
-
     r = requests.get('https://gate.io/json_svr/query_push/?u=13&c=506680&type=push_main_rates&symbol=USDT_CNY')
     print(r.text)
     data = json.loads(r.text)
